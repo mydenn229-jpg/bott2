@@ -1,5 +1,5 @@
 import asyncio
-from random import *
+import random
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
@@ -30,7 +30,7 @@ async def cmd_help(message: types.Message):
 @dp.message(Command('random'))
 async def cmd_random(message: types.Message):
     x = random.randint(1, 10000)
-    await message.answer('Хмм... Твоё случайное число: (x)')
+    await message.answer(f'Хмм... Твоё случайное число: {x}')
 
 async def main():
     await dp.start_polling(bot)
