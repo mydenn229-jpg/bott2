@@ -1,5 +1,5 @@
 import asyncio
-import random
+from random import *
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
