@@ -17,7 +17,7 @@ BOT_TOKEN = "8465834662:AAE3UKK1-46C2-LqThduiv3WHGk970Zec4c"
 
 
 # Создаем объекты бота, диспетчера и роутера
-bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 router = Router()
 
